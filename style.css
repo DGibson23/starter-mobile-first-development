@@ -26,4 +26,27 @@ main h3 {
 main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
+
+  .group img{
+    width: 100%;
+  }
+}
+/* Group all img together */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+
+/* Desktop */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
 }
